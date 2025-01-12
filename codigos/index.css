@@ -251,6 +251,10 @@ nav {
 }
 
 /*Estilizaçao do card 2 bloco 2*/
+.bloco2_card2 {
+    display: flex;
+    flex-direction: column;
+}
 
 .container_bloco2_1 { /*Bloco que abriga Recompensas e descontos*/
     height: 33%;
@@ -263,16 +267,15 @@ nav {
 #bloco2_1 { /*Bloco q abriga recompensas*/
     height: 160px;
     width: 382px;
-    border: 1px solid #64748B;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
 }
 
 #bloco2_1-1 { /*Para deixar o ícone e o "Recompensa" lado a lado*/
     display: flex;
+    flex-direction: row;
     margin-top: 15px;
+    
     
 }
 
@@ -305,8 +308,8 @@ nav {
 #bloco2_2 { /*Abriga Descontos*/
     height: 160px;
     width: 330px;
-    border: 1px solid #64748B;
-    border-radius: 4px;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
 }
@@ -320,6 +323,7 @@ nav {
 
 #bloco2_1-2 { /*Para deixar o ícone e o "Recompensa" lado a lado*/
     display: flex;
+    flex-direction: row;
     margin-top: 15px;
 }
 
@@ -337,4 +341,149 @@ nav {
     font-weight: 400;
     font-size: 14px;
     color:#64748B;
+}
+
+/*testes de ajustes para posicionamento do cartao internacional, cashback etc*/
+
+.container_bloco2_2 {
+    height: 33%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+#bloco2_card2_1-1 { /*abriga ícone do cashback e titulo; para deixa-los lado a lado*/
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+#cash {
+    height: 48px;
+    width: 48px;
+    border-radius: 5px;
+    background-color: #EEE5FF;
+}
+
+#cashback {
+    margin-top: 15px;
+    font-family: 'Outfit', serif;
+    color: #6729FF;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bloco2_card2-1 {
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    width: 317px;
+    height: 160px;
+}
+
+#txt-cashback {
+    font-family: 'poppins', serif;
+    font-weight: 400;
+    font-size: 14px;
+    color:#64748B;
+}
+
+/*Cartao Internacional*/
+
+.card-icon {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+#creditcard {
+    height: 48px;
+    width: 48px;
+    border-radius: 5px;
+    background-color: #EEE5FF;
+}
+
+#card-title {
+    margin-top: 15px;
+    font-family: 'Outfit', serif;
+    color: #6729FF;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.txt_creditcard {
+    font-family: 'poppins', serif;
+    font-weight: 400;
+    font-size: 14px;
+    color:#64748B;
+}
+
+.bloco2_card2-2 {
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    width: 395px;
+    height: 160px;
+}
+
+/*desenvolvimento do terceiro card do segundo bloco. (Carteira Digital)*/
+.container_bloco2_3 {
+    height: 33%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 16px;
+    background-color: #F3F2FF;
+    border-radius: 16px;
+    border-radius: 8px;
+}
+
+.bloco2_card3-1 {
+    display: flex;
+    flex-direction: column;
+    background-color:#F3F2FF;
+}
+
+.digitalwallet-icon_container {
+    display: flex;
+    flex-direction: row;
+    background-color:#F3F2FF;
+}
+
+#digitalwallet {
+    height: 48px;
+    width: 48px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+#digitalwallet-title {
+    margin-top: 15px;
+    font-family: 'Outfit', serif;
+    color: #6729FF;
+    font-size: 20px;
+    font-weight: 600;
+    background-color:#F3F2FF;
+}
+
+.txtdigitalwallet {
+    font-family: 'poppins', serif;
+    font-weight: 400;
+    font-size: 14px;
+    color:#64748B;
+    background-color:#F3F2FF;
+}
+
+.bloco2_card3-2 {
+    display: flex;
+    background-color: #F3F2FF;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#rectanglecard {
+    background-color: #F3F2FF;
+    margin-top: 50px;
+    margin-right: 50px;
 }
